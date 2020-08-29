@@ -1,0 +1,17 @@
+#open the file
+file_path= 'C:/Users/nhungtth/Desktop/Test_python.txt'
+text_file = open(file_path,'r+')
+
+#initialize an empty list
+word_list= []
+
+#iterate 4 times
+for i in range (1, 5):
+    print("Please enter data: ")
+    line = input() #take input
+    word_list.append(line) #append to the list
+
+
+text_file.writelines(word_list) #write 4 words to the file
+
+text_file.close() #don’t forget to close the file
